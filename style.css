@@ -4,13 +4,11 @@
     font-family: 'Amiri', serif;
     transition: all 1s ease;
 }
-
 body{
     margin: 0 auto;
     box-sizing: border-box;
     background-color: #f8f8f8;
 }
-
 div#wrap{
     margin: 0 auto;
     box-sizing: border-box;
@@ -54,7 +52,6 @@ div#wrap{
     line-height: 20px;
     font-weight: bold;
 }
-
 div#wrap h1{
     font-size: 22px;
     margin: 5px;
@@ -63,7 +60,6 @@ div#wrap h1{
     line-height: 44px;
     font-weight: bold;
 }
-
 div#wrap input.atrybut{
     display: block;
     width: 95%;
@@ -90,7 +86,6 @@ div#wrap input.atrybut:focus {
     background-color: lightgoldenrodyellow;
     transform: scale(1.05, 1.05);
 }
-
 div#wrap input.atrybut:hover {
     background-color: lightgoldenrodyellow;
 }
@@ -99,7 +94,6 @@ div#checkbutton{
     display: block;
     margin: 10px auto;
 }
-
 button{
     display: inline-block;
     cursor: default;
@@ -116,14 +110,10 @@ button{
     border-radius: 5px;
     transition: all .5s ease;
 }
-
 button:hover{
     background-color: red;
     background-color: rgba(58, 134, 255, 0.92);
 }
-
-
-
 /*ANIMACJA*/
 #anim{
     transform: scale(.3,.3);
@@ -178,10 +168,6 @@ button:hover{
   top: -346px;
   left: -250px;
 }
-
-
-
-
 @keyframes rollin {
   from {
     transform: rotateX(-15deg) rotateY(-20deg) rotateZ(-10deg);
@@ -190,8 +176,6 @@ button:hover{
     transform: rotateX(30deg) rotateY(10deg) rotateZ(30deg);
   }
 }
-
-
 .ref {
   font-family: Arial, sans-serif;
   background-color: #007;
