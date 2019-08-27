@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Amiri', serif;
+    transition: all 1s ease;
+}
+
+body{
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+div#wrap{
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 450px;
+    height: 420px;
+    background-color: #F0F0F0;
+    border: 1px solid #D3D3D3;
+    border-radius: 5px;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+#pizzawrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: stretch;
+}
+.pizzabox{
+    width: 50%;
+    max-width: 210px;
+    height: 140px;
+    border: 1px solid #80808061;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: stretch;
+    background-color: rgba(255, 255, 255, 0.32);
+}
+.verdict{
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: center;
+    color: #0d4aa4;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+div#wrap h1{
+    font-size: 22px;
+    margin: 5px;
+    text-align: center;
+    color: #0d4aa4;
+    line-height: 44px;
+    font-weight: bold;
+}
+
+div#wrap input.atrybut{
+    display: block;
+    width: 95%;
+    max-width: 180px;
+    height: 35px;
+    text-align: center;
+    margin: 3px auto;
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #2C2022;
+    padding: 0px 15px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    background-color: #FFFFFF;
+    border: 1px solid #C1C1C1;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+}
+
+div#wrap input.atrybut:focus {
+    background-color: lightgoldenrodyellow;
+    transform: scale(1.05, 1.05);
+}
+
+div#wrap input.atrybut:hover {
+    background-color: lightgoldenrodyellow;
+}
+div#checkbutton{
+    width: 82px;
+    display: block;
+    margin: 10px auto;
+}
+
+button{
+    display: inline-block;
+    cursor: default;
+    font-size: 15px;
+    line-height: 15px;
+    color: #FFFFFF;
+    background-color: rgba(13, 71, 164, 0.78);
+    padding: 10px 20px;
+    margin: 0 auto;
+    text-align: center;
+    /background-image: linear-gradient(-45deg, green 10%, blue);
+    text-transform: capitalize;
+    border: none;
+    border-radius: 5px;
+    transition: all .5s ease;
+}
+
+button:hover{
+    background-color: red;
+    background-color: rgba(58, 134, 255, 0.92);
+}
+
+
+
+/*ANIMACJA*/
+#anim{
+    transform: scale(.3,.3);
+    margin: -120px 0px -100px 0px;
+}
+#pizza {
+	width: 0;
+	height: 0;
+	border-left: 200px solid transparent;
+	border-right: 200px solid transparent;
+	border-top: 346.4px solid #FEC56F;
+  border-radius: 100%;
+  position: relative;
+  animation: 3s ease-in-out infinite alternate rollin;
+  transform-style: preserve-3d;
+    margin: 0 auto;
+}
+#pizza:before {
+  display: block;
+  backface-visibility: hidden;
+  transform: translateZ(3px);
+  content: "";
+  background-color: #C40509;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  position: absolute;
+  left: -60px;
+  top: -260px;
+  box-shadow: 90px 40px 0 #C40509, 20px 110px 0 #C40509, /* Salami */
+    2px 2px 0 #930e11, 92px 42px 0 #930e11, 22px 112px 0 #930e11, /* Salami Shading */
+    /* Cheese Shading */
+    -70px -20px 20px 8px rgba(0, 0, 0, .1), 
+    0px -10px 30px 20px rgba(0, 0, 0, .1),
+    80px -50px 20px 7px rgba(0, 0, 0, .1),
+    30px 140px 20px 7px rgba(0, 0, 0, .1),
+    -20px 60px 20px 3px rgba(255, 255, 255, .2),
+    80px 30px 30px 15px rgba(255, 255, 255, .2),
+    0px 120px 20px 3px rgba(0, 0, 0, .1),
+    85px 50px 15px 5px rgba(0, 0, 0, .1);
+}
+#pizza:after {
+  transform: translateZ(6px);
+  display: block;
+  content: "";
+  width: 400px;
+  height: 400px;
+  border-radius: 100%;
+  border: 50px solid transparent;
+  border-top-color: #AD6628;
+  position: absolute;
+  top: -346px;
+  left: -250px;
+}
+
+
+
+
+@keyframes rollin {
+  from {
+    transform: rotateX(-15deg) rotateY(-20deg) rotateZ(-10deg);
+  }
+  to {
+    transform: rotateX(30deg) rotateY(10deg) rotateZ(30deg);
+  }
+}
+
+
+.ref {
+  font-family: Arial, sans-serif;
+  background-color: #007;
+  background-image: linear-gradient(to top, #007, #55c);
+  border-radius: 3px;
+  padding: 5px 10px;
+  position: fixed;
+  font-size: 14px;
+  bottom: 10px;
+  right: 10px;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 3px rgba(0, 0, 0, .4);
+}
+.ref::first-letter {
+  font-size: 12px;
+}
+/*ANIMACJA*/
